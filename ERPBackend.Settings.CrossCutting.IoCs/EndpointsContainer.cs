@@ -1,6 +1,13 @@
-﻿namespace ERPBackend.Settings.CrossCutting.IoCs;
+﻿using Microsoft.AspNetCore.Builder;
 
-public class EndpointsContainer
+namespace ERPBackend.Settings.CrossCutting.IoCs;
+
+public static class EndpointsContainer
 {
-    
+    public static WebApplication UseSettingsModuleEndpoints(this WebApplication app)
+    {
+        app.UseSettingsEndpoints();
+        
+        return app;
+    }
 }

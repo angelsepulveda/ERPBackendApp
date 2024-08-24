@@ -2,5 +2,5 @@
 
 public interface IRegisterDocumentTypeInputPort
 {
-    
+    Task HandleAsync(RegisterDocumentTypePayloadDto payload);
 }

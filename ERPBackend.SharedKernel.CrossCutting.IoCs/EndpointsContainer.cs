@@ -1,6 +1,11 @@
 ﻿namespace ERPBackend.SharedKernel.CrossCutting.IoCs;
 
-public class EndspointsContainer
+public static class EndpointsContainer
 {
-    
+    public static WebApplication UseERPEndpoints(this WebApplication app)
+    {
+        app.UseSettingsEndpoints();
+        
+        return app;
+    }
 }

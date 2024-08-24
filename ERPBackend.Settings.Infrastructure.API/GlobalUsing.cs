@@ -8,4 +8,7 @@ global using Microsoft.AspNetCore.Mvc;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Register.Dtos;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Register.Interfaces;
 global using ERPBackend.Settings.Infrastructure.APÍ.DocumentTypes;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.GetAll.Interfaces;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Restore.Interfaces;
 #endregion

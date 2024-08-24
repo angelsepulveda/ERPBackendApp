@@ -1,6 +1,5 @@
-﻿namespace ERPBackend.SharedKernel.CrossCutting.IoCs;
-
-public class GlobalUsing
-{
-    
-}
+﻿global using ERPBackend.Settings.CrossCutting.IoCs;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using ERPBackend.Settings.Infrastructure.APÍ;
+global using Microsoft.AspNetCore.Builder;

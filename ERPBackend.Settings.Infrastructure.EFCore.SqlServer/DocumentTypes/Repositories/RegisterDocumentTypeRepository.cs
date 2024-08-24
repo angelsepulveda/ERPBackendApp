@@ -1,6 +1,7 @@
 ﻿namespace ERPBackend.Settings.Infrastructure.EFCore.SqlServer.DocumentTypes.Repositories;
 
-public class RegisterDocumentTypeRepository
+internal sealed class RegisterDocumentTypeRepository(SettingsApplicationDbContext dbContext)
+    : IRegisterDocumentTypeRepository
 {
-    
+    public void Handle(DocumentType documentType) => dbContext.DocumentTypes.Add(documentType);
 }

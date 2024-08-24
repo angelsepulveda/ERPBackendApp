@@ -1,6 +1,11 @@
 ﻿namespace ERPBackend.Settings.Infrastructure.Presenters;
 
-public class DependencyInjection
+public static class DependencyInjection
 {
-    
+    public static IServiceCollection AddSettingsPresenters(this IServiceCollection services)
+    {
+        services.AddDocumentTypePresenters();
+        
+        return services;
+    }
 }

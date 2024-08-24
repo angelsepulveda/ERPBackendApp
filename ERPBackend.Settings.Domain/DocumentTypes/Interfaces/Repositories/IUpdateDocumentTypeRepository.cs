@@ -2,5 +2,5 @@
 
 public interface IUpdateDocumentTypeRepository
 {
-    
+    void Handle(DocumentType documentType);
 }

@@ -1,6 +1,3 @@
 ﻿namespace ERPBackend.Settings.Application.DocumentTypes.Features.Register.Dtos;
 
-public class RegisterDocumentTypePayloadDto
-{
-    
-}
+public sealed record RegisterDocumentTypePayloadDto(string Name, string? Code, string? Description);

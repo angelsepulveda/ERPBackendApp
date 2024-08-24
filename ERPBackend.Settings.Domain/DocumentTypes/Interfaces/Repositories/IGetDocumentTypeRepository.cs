@@ -2,5 +2,5 @@
 
 public interface IGetDocumentTypeRepository
 {
-    
+    Task<IReadOnlyList<DocumentType>> HandleAsync();
 }

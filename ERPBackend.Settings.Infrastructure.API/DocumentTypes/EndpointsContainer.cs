@@ -5,7 +5,10 @@ public static class EndpointsContainer
     public static WebApplication UseDocumentTypesEndpoints(this WebApplication app)
     {
         app.UseRegisterDocumentTypeEndpoint();
-        
+        app.UseGetAllDocumentTypeEndpoint();
+        app.UseDeleteDocumentTypeEndpoint();
+        app.UseRestoreDocumentTypeEndpoint();
+
         return app;
     }
 }

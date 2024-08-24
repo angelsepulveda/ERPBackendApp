@@ -1,6 +1,14 @@
 ﻿namespace ERPBackend.Settings.CrossCutting.IoCs;
 
-public class DependencyContainer
+public static class DependencyContainer
 {
-    
+    public static IServiceCollection AddSettingsServices(this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        services.AddSettingsApplication()
+            .AddSettingsPresenters()
+            .AddSettingsEFCoreSqlServer(configuration);
+
+        return services;
+    }
 }

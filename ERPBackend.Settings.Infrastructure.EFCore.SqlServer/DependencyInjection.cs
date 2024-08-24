@@ -1,6 +1,13 @@
 ﻿namespace ERPBackend.Settings.Infrastructure.EFCore.SqlServer;
 
-public class DependencyInjection
+public static class DependencyInjection
 {
-    
+    public static IServiceCollection AddSettingsEFCoreSqlServer(this IServiceCollection services,
+       IConfiguration configuration)
+    {
+        services.AddCoreSettingsEFCoreSqlServer(configuration);
+        services.AddDocumentTypesEFCoreSqlServer();
+
+        return services;
+    }
 }

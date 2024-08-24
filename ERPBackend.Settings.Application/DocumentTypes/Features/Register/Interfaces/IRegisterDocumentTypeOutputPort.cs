@@ -2,5 +2,6 @@
 
 public interface IRegisterDocumentTypeOutputPort
 {
-    
+    Guid DocumentTypeId { get; }
+    Task HandleAsync(DocumentType documentType);
 }
