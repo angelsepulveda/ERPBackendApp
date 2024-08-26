@@ -3,17 +3,29 @@
 internal sealed class RegisterDocumentTypeInteractor(
     IRegisterDocumentTypeRepository repository,
     IUnitOfWork unitOfWork,
-    IRegisterDocumentTypeOutputPort presenter)
+    IRegisterDocumentTypeOutputPort presenter,
+    IModelValidatorHub<RegisterDocumentTypePayloadDto> registerDocumentTypeValidator)
     : IRegisterDocumentTypeInputPort
 {
     public async Task HandleAsync(RegisterDocumentTypePayloadDto payload)
     {
-        var documentType = DocumentType.Create(payload.Name, payload.Code, payload.Description);
+        Result<DocumentType, IEnumerable<ValidationError>> result;
 
-        repository.Handle(documentType);
+        if (await registerDocumentTypeValidator.Validate(payload))
+        {
+            var documentType = DocumentType.Create(payload.Name, payload.Code, payload.Description);
 
-       var result = await unitOfWork.SaveChangesAsync();
+            repository.Handle(documentType);
 
-        await presenter.HandleAsync(documentType);
+            await unitOfWork.SaveChangesAsync();
+
+            result = new Result<DocumentType, IEnumerable<ValidationError>>(documentType);
+        }
+        else
+        {
+            result = new Result<DocumentType, IEnumerable<ValidationError>>(registerDocumentTypeValidator.Errors);
+        }
+
+        presenter.Handle(result);
     }
 }

@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ERPBackend.Settings.CrossCutting.IoCs\ERPBackend.Settings.CrossCutting.IoCs.csproj" />
+      <ProjectReference Include="..\ERPBackend.SharedKernel.Validations.Infrastructure.FluentValidation\ERPBackend.SharedKernel.Validations.Infrastructure.FluentValidation.csproj" />
     </ItemGroup>
 
 </Project>
