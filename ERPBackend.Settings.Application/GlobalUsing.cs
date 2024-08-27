@@ -17,6 +17,7 @@ global using ERPBackend.Settings.Application.DocumentTypes.Features.Delete.UseCa
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Restore.Interfaces;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Restore.UseCases;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Register.Validators;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Dtos;
 #endregion
 
 #region Libreries

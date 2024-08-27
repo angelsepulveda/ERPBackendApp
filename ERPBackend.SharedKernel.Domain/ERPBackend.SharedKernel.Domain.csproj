@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ERPBackend.SharedKernel.Validations.Domain\ERPBackend.SharedKernel.Validations.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

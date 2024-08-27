@@ -2,16 +2,10 @@
 
 internal sealed class RegisterDocumentTypePresenter : IRegisterDocumentTypeOutputPort
 {
-    public IResult Result { get; private set; }
+    public Guid DocumentTypeId { get; private set; }
 
-    public void Handle(Result<DocumentType, IEnumerable<ValidationError>> result)
+    public void Handle(DocumentType documentType)
     {
-        result.HandleResult((documentType) => Result = Results.Ok(documentType.Id.Value),
-            (errors) => Result = Results.BadRequest(errors.ToProblemDetails(
-                "Error en los datos de entrada",
-                "Se encontraron uno o mas errores de validación",
-                nameof(RegisterDocumentTypePresenter)
-            ))
-        );
+        DocumentTypeId = documentType.Id.Value;
     }
 }

@@ -2,6 +2,6 @@
 
 public interface IRegisterDocumentTypeOutputPort
 {
-    IResult Result { get; }
-    void Handle(Result<DocumentType,IEnumerable<ValidationError>> result);
+    Guid DocumentTypeId { get; }
+    void Handle(DocumentType documentType);
 }

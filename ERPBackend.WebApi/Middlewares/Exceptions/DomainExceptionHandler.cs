@@ -1,0 +1,35 @@
+﻿namespace ERPBackend.WebApi.Middlewares.Exceptions;
+
+internal sealed class DomainExceptionHandler : IExceptionHandler
+{
+    private readonly ILogger<DomainExceptionHandler> _logger;
+
+    public DomainExceptionHandler(ILogger<DomainExceptionHandler> logger)
+    {
+        _logger = logger;
+    }
+
+    public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception,
+        CancellationToken cancellationToken)
+    {
+        if (exception is not DomainException domainException)
+        {
+            return false;
+        }
+
+        _logger.LogError(exception, "Domain exception occurred: {Message}", domainException.Message);
+
+        var problemDetails = new ProblemDetails
+        {
+            Status = StatusCodes.Status400BadRequest,
+            Title = "Bad Request",
+            Detail = domainException.Message,
+        };
+
+        httpContext.Response.StatusCode = problemDetails.Status.Value;
+
+        await httpContext.Response.WriteAsJsonAsync(problemDetails, cancellationToken);
+
+        return true;
+    }
+}

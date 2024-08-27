@@ -1,6 +1,3 @@
-using ERPBackend.SharedKernel.CrossCutting.IoCs;
-using ERPBackend.SharedKernel.Domain.Options;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +13,26 @@ builder.Logging.AddDebug();
 builder.Services.AddERPServices(
     builder.Configuration
 );
+
+// Configure logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
+// Register ILogger
+builder.Services.AddSingleton<ILogger>(provider =>
+{
+    var loggerFactory = provider.GetRequiredService<ILoggerFactory>();
+    return loggerFactory.CreateLogger<Program>();
+});
+
+builder.Services.AddProblemDetails();
+
+//EXCEPTIONS HANDLERS
+builder.Services.AddExceptionHandler<NotFoundExceptionHandler>();
+builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
+builder.Services.AddExceptionHandler<DomainExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 builder.Services.AddCors(options =>
 {
@@ -42,5 +59,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseERPEndpoints();
 app.UseCors();
+app.UseExceptionHandler();
 
 app.Run();

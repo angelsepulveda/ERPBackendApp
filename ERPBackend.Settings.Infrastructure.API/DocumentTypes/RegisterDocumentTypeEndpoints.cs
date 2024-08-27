@@ -10,7 +10,7 @@ public static class RegisterDocumentTypeEndpoints
                 {
                     await inputPort.HandleAsync(payload);
 
-                    return presenter.Result;
+                    return presenter.DocumentTypeId;
                 }).Produces<int>()
             .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
         

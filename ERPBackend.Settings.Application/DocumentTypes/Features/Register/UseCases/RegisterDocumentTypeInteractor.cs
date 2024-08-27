@@ -1,4 +1,6 @@
-﻿namespace ERPBackend.Settings.Application.DocumentTypes.Features.Register.UseCases;
+﻿using ERPBackend.SharedKernel.Domain.Exceptions;
+
+namespace ERPBackend.Settings.Application.DocumentTypes.Features.Register.UseCases;
 
 internal sealed class RegisterDocumentTypeInteractor(
     IRegisterDocumentTypeRepository repository,
@@ -9,23 +11,15 @@ internal sealed class RegisterDocumentTypeInteractor(
 {
     public async Task HandleAsync(RegisterDocumentTypePayloadDto payload)
     {
-        Result<DocumentType, IEnumerable<ValidationError>> result;
+        if (!await registerDocumentTypeValidator.Validate(payload))
+            throw new ValidationException(registerDocumentTypeValidator.Errors);
+        
+        var documentType = DocumentType.Create(payload.Name, payload.Code, payload.Description);
 
-        if (await registerDocumentTypeValidator.Validate(payload))
-        {
-            var documentType = DocumentType.Create(payload.Name, payload.Code, payload.Description);
+        repository.Handle(documentType);
 
-            repository.Handle(documentType);
+        await unitOfWork.SaveChangesAsync();
 
-            await unitOfWork.SaveChangesAsync();
-
-            result = new Result<DocumentType, IEnumerable<ValidationError>>(documentType);
-        }
-        else
-        {
-            result = new Result<DocumentType, IEnumerable<ValidationError>>(registerDocumentTypeValidator.Errors);
-        }
-
-        presenter.Handle(result);
+        presenter.Handle(documentType);
     }
 }
