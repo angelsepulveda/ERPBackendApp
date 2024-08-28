@@ -22,7 +22,7 @@ internal sealed class ValidationExceptionHandler : IExceptionHandler
 
         var problemDetails = new ProblemDetails
         {
-            Status = StatusCodes.Status404NotFound,
+            Status = StatusCodes.Status400BadRequest,
             Title = "Validation Error",
             Detail = validationException.Message,
         };

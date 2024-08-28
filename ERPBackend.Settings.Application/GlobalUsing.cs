@@ -21,18 +21,19 @@ global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Dtos;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.Dtos;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.Interfaces;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.UseCases;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.UseCases;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Validators;
 #endregion
 
 #region Libreries
 global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.AspNetCore.Http;
 #endregion
 
 #region Shared
 global using ERPBackend.SharedKernel.Validations.Domain.Abstractions;
 global using ERPBackend.SharedKernel.Validations.Domain.Interfaces;
 global using ERPBackend.SharedKernel.Validations.Domain;
-global using ERPBackend.SharedKernel.Domain.Results;
-global using ERPBackend.SharedKernel.Validations.Domain.ValueObjects;
 global using ERPBackend.SharedKernel.Domain.Paginations;
+global using ERPBackend.SharedKernel.Domain.Exceptions;
 #endregion

@@ -4,7 +4,7 @@ public static class RestoreDocumentTypeEndpoints
 {
     public static WebApplication UseRestoreDocumentTypeEndpoint(this WebApplication app)
     {
-        app.MapDelete("api/v1/document-types/restore/{id:guid}",
+        app.MapPatch("api/v1/document-types/restore/{id:guid}",
             async (IRestoreDocumentTypeInputPort inputPort,
                 Guid id) =>
             {

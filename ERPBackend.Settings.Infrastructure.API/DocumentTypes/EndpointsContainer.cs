@@ -9,6 +9,7 @@ public static class EndpointsContainer
         app.UseDeleteDocumentTypeEndpoint();
         app.UseRestoreDocumentTypeEndpoint();
         app.UsePaginationDocumentTypeEndpoint();
+        app.UseUpdateDocumentTypeEndpoint();
 
         return app;
     }

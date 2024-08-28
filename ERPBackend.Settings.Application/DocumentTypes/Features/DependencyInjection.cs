@@ -10,6 +10,7 @@ public static class DependencyInjection
         services.AddScoped<IDeleteDocumentTypeInputPort, DeleteDocumentTypeInteractor>();
         services.AddScoped<IRestoreDocumentTypeInputPort, RestoreDocumentTypeInteractor>();
         services.AddScoped<IPaginationDocumentTypeInputPort, PaginationDocumentTypeInteractor>();
+        services.AddScoped<IUpdateDocumentTypeInputPort, UpdateDocumentTypeInteractor>();
 
         services.AddDocumentTypesValidators();
 
@@ -19,6 +20,7 @@ public static class DependencyInjection
     private static IServiceCollection AddDocumentTypesValidators(this IServiceCollection services)
     {
         services.AddModelValidator<RegisterDocumentTypePayloadDto, RegisterDocumentTypeValidator>();
+        services.AddModelValidator<UpdateDocumentTypePayloadDto, UpdateDocumentTypeValidator>();
 
         return services;
     }

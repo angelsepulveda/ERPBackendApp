@@ -2,6 +2,6 @@
 
 public interface IUpdateDocumentTypeOutputPort
 {
-    IResult Result { get; }
-    void Handle(Result<DocumentType, IEnumerable<ValidationError>> result);
+    UpdateDocumentTypeResponseDto Response { get; }
+    void Handle(DocumentType documentType);
 }

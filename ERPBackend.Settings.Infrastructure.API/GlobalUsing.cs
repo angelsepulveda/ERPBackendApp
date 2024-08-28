@@ -13,4 +13,6 @@ global using ERPBackend.Settings.Application.DocumentTypes.Features.Delete.Inter
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Restore.Interfaces;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.Dtos;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Interfaces;
 #endregion

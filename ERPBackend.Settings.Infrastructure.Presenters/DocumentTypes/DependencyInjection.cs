@@ -7,6 +7,7 @@ public static class DependencyInjection
         services.AddScoped<IRegisterDocumentTypeOutputPort, RegisterDocumentTypePresenter>();
         services.AddScoped<IGetAllDocumentTypeOutputPort, GetAllDocumentTypePresenter>();
         services.AddScoped<IPaginationDocumentTypeOutputPort, PaginationDocumentTypePresenter>();
+        services.AddScoped<IUpdateDocumentTypeOutputPort, UpdateDocumentTypePresenter>();
 
         return services;
     }
