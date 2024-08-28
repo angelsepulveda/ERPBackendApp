@@ -18,6 +18,9 @@ global using ERPBackend.Settings.Application.DocumentTypes.Features.Restore.Inte
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Restore.UseCases;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Register.Validators;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.DocumentTypes.Features.Pagination.UseCases;
 #endregion
 
 #region Libreries
@@ -31,4 +34,5 @@ global using ERPBackend.SharedKernel.Validations.Domain.Interfaces;
 global using ERPBackend.SharedKernel.Validations.Domain;
 global using ERPBackend.SharedKernel.Domain.Results;
 global using ERPBackend.SharedKernel.Validations.Domain.ValueObjects;
+global using ERPBackend.SharedKernel.Domain.Paginations;
 #endregion

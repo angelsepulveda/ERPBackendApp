@@ -9,6 +9,7 @@ public static class DependencyContainer
         services.AddScoped<IGetDocumentTypeRepository, GetDocumentTypeRepository>();
         services.AddScoped<IGetAllDocumentTypeRepository, GetAllDocumentTypeRepository>();
         services.AddScoped<IGetByIdDocumentTypeRepository, GetByIdDocumentTypeRepository>();
+        services.AddScoped<IPaginationDocumentTypeRepository, PaginationDocumentTypeRepository>();
 
         return services;
     }

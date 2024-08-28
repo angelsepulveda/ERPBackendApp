@@ -15,7 +15,7 @@ global using ERPBackend.Settings.Domain.DocumentTypes.ValueObjects;
 #endregion
 
 #region Kernel
-global using ERPBackend.SharedKernel.Domain.Options;
+global using ERPBackend.SharedKernel.Domain.Paginations;
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Contexts;
 global using ERPBackend.SharedKernel.Domain.Interfaces.Repositories;
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core;

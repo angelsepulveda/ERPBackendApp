@@ -10,4 +10,5 @@ global using ERPBackend.Settings.Domain.VoucherTypes.ValueObjects;
 
 #region Shared
 global using ERPBackend.SharedKernel.Domain.Exceptions;
+global using ERPBackend.SharedKernel.Domain.Paginations;
 #endregion
