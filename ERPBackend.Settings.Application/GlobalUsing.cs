@@ -26,6 +26,30 @@ global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.UseCa
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Validators;
 #endregion
 
+#region VoucherTypes
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Register.Dtos;
+global using ERPBackend.Settings.Domain.VoucherTypes.Entities;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.VoucherTypes.Interfaces.Repositories;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Register.UseCases;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Register.Validators;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Pagination.UseCases;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.UseCases;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.Validators;
+global using ERPBackend.Settings.Domain.VoucherTypes.ValueObjects;
+global using ERPBackend.Settings.Domain.VoucherTypes.Exceptions;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Delete.UseCases;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Restore.UseCases;
+global using ERPBackend.Settings.Application.VoucherTypes.Features;
+global using ERPBackend.Settings.Application.VoucherTypes;
+#endregion
+
 #region Libreries
 global using Microsoft.Extensions.DependencyInjection;
 #endregion

@@ -7,6 +7,7 @@ public static class DependencyInjection
     {
         services.AddCoreSettingsEFCoreSqlServer(configuration);
         services.AddDocumentTypesEFCoreSqlServer();
+        services.AddVoucherTypesEFCoreSqlServer();
 
         return services;
     }

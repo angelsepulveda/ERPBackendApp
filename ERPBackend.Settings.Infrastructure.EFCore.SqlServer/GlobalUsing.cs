@@ -14,6 +14,14 @@ global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.DocumentTypes;
 global using ERPBackend.Settings.Domain.DocumentTypes.ValueObjects;
 #endregion
 
+#region VoucherTypes
+global using ERPBackend.Settings.Domain.VoucherTypes.Entities;
+global using ERPBackend.Settings.Domain.VoucherTypes.ValueObjects;
+global using ERPBackend.Settings.Domain.VoucherTypes.Interfaces.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.VoucherTypes.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.VoucherTypes;
+#endregion
+
 #region Kernel
 global using ERPBackend.SharedKernel.Domain.Paginations;
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Contexts;

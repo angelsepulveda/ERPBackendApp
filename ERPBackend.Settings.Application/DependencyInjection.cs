@@ -5,6 +5,7 @@ public static class DependencyInjection
     public static IServiceCollection AddSettingsApplication(this IServiceCollection services)
     {
         services.AddDocumentTypesApplication();
+        services.AddVoucherTypesApplication();
         
         return services;
     }

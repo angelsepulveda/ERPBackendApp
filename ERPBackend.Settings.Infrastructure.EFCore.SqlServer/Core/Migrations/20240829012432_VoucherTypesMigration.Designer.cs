@@ -4,6 +4,7 @@ using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Migrations
 {
     [DbContext(typeof(InternalSettingsApplicationDbContext))]
-    partial class InternalSettingsApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240829012432_VoucherTypesMigration")]
+    partial class VoucherTypesMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -6,6 +6,7 @@ global using ERPBackend.Settings.Domain.DocumentTypes.Entities;
 
 #region VoucherTypes
 global using ERPBackend.Settings.Domain.VoucherTypes.ValueObjects;
+global using ERPBackend.Settings.Domain.VoucherTypes.Entities;
 #endregion
 
 #region Shared

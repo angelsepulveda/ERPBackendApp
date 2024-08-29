@@ -10,6 +10,16 @@ global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Dtos;
 global using ERPBackend.Settings.Application.DocumentTypes.Features.Update.Interfaces;
 #endregion
 
+#region VoucherTypes
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Domain.VoucherTypes.Entities;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Register.Interfaces;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.Interfaces;
+global using ERPBackend.Settings.Infrastructure.Presenters.VoucherTypes;
+#endregion
+
 #region Libreries
 global using Microsoft.Extensions.DependencyInjection;
 global using ERPBackend.SharedKernel.Domain.Paginations;

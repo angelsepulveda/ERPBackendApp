@@ -1,6 +1,6 @@
 ﻿namespace ERPBackend.Settings.Infrastructure.EFCore.SqlServer.DocumentTypes.Repositories;
 
-public static class DependencyContainer
+public static class DependencyInjection
 {
     public static IServiceCollection AddDocumentTypeRepositories(this IServiceCollection services)
     {
