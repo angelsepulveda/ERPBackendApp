@@ -3,9 +3,21 @@
 internal sealed class PaginationVoucherTypeRepository(SettingsApplicationDbContext dbContext)
     : IPaginationVoucherTypeRepository
 {
-    public async Task<PaginatedList<VoucherType>> HandleAsync(int pageIndex, int pageSize)
+    public async Task<PaginatedList<VoucherType>> HandleAsync(int pageIndex, int pageSize, string? searchQuery)
     {
-        var voucherTypes = await dbContext.VoucherTypes
+        var query = dbContext.VoucherTypes.AsQueryable();
+        
+        if (!string.IsNullOrEmpty(searchQuery))
+        {
+            query = query.Where(d => 
+                d.Name.Contains(searchQuery) || 
+                d.Description.Contains(searchQuery) ||
+                d.Code.Contains(searchQuery)
+            );
+            pageIndex = 1;
+        }
+        
+        var voucherTypes = await query
             .OrderBy(b => b.Id)
             .Skip((pageIndex - 1) * pageSize)
             .Take(pageSize)

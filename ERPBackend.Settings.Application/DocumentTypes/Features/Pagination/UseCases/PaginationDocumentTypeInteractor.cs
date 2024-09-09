@@ -6,7 +6,7 @@ internal sealed class PaginationDocumentTypeInteractor(
 {
     public async Task HandleAsync(PaginationDocumentTypePayloadDto payload)
     {
-        var paginatedDocumentTypes = await repository.HandleAsync(payload.PageIndex, payload.PageSize);
+        var paginatedDocumentTypes = await repository.HandleAsync(payload.PageIndex, payload.PageSize, payload.Search);
 
         outputPort.Handle(paginatedDocumentTypes);
     }

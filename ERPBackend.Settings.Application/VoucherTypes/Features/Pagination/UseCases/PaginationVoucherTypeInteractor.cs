@@ -6,7 +6,7 @@ internal sealed class PaginationVoucherTypeInteractor(
 {
     public async Task HandleAsync(PaginationVoucherTypePayloadDto payload)
     {
-        var paginatedVoucherTypes = await repository.HandleAsync(payload.PageIndex, payload.PageSize);
+        var paginatedVoucherTypes = await repository.HandleAsync(payload.PageIndex, payload.PageSize, payload.Search);
 
         outputPort.Handle(paginatedVoucherTypes);
     }

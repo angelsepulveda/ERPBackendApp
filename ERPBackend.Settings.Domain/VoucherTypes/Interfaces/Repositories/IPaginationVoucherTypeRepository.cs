@@ -2,5 +2,5 @@
 
 public interface IPaginationVoucherTypeRepository
 {
-    Task<PaginatedList<VoucherType>> HandleAsync(int pageIndex, int pageSize);
+    Task<PaginatedList<VoucherType>> HandleAsync(int pageIndex, int pageSize, string? searchQuery);
 }
