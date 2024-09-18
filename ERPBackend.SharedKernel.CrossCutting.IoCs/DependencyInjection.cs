@@ -8,6 +8,7 @@ public static class DependencyInjection
         services.AddFluentValidationServices();
         
         services.AddSettingsServices(configuration);
+        services.AddWareHousesServices(configuration);
         
         return services;
     }

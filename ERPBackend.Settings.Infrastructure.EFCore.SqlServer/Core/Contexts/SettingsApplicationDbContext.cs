@@ -2,7 +2,7 @@
 
 public class SettingsApplicationDbContext : DbContext, IUnitOfWork
 {
-    public SettingsApplicationDbContext(DbContextOptions options)
+    public SettingsApplicationDbContext(DbContextOptions<SettingsApplicationDbContext> options)
         : base(options)
     {
     }
