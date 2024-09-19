@@ -1,6 +1,5 @@
 ﻿#region Categories
 global using ERPBackend.WareHouses.Domain.Categories.Entities;
-global using ERPBackend.SharedKernel.Domain.Interfaces.Repositories;
 global using ERPBackend.WareHouses.Domain.Categories.ValueObjects;
 global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.Categories.Configurations;
 global using ERPBackend.WareHouses.Domain.Categories.Interfaces.Repositories;
@@ -23,4 +22,12 @@ global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.Core;
 
 #region Shared
 global using ERPBackend.SharedKernel.Domain.Paginations;
+#endregion
+
+#region Brands
+global using ERPBackend.WareHouses.Domain.Brands.Entities;
+global using ERPBackend.WareHouses.Domain.Brands.ValueObjects;
+global using ERPBackend.WareHouses.Domain.Brands.Interfaces.Repositories;
+global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.Brands.Repositories;
+global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.Brands;
 #endregion

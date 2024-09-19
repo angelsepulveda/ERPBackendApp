@@ -17,3 +17,17 @@ global using Microsoft.AspNetCore.Builder;
 global using Microsoft.AspNetCore.Http;
 global using Microsoft.AspNetCore.Mvc;
 #endregion
+
+#region Brands
+global using ERPBackend.WareHouses.Application.Brands.Features.Delete.Interfaces;
+global using ERPBackend.WareHouses.Application.Brands.Features.Get.Dtos;
+global using ERPBackend.WareHouses.Application.Brands.Features.Get.Interfaces;
+global using ERPBackend.WareHouses.Application.Brands.Features.Pagination.Dtos;
+global using ERPBackend.WareHouses.Application.Brands.Features.Pagination.Interfaces;
+global using ERPBackend.WareHouses.Application.Brands.Features.Register.Dtos;
+global using ERPBackend.WareHouses.Application.Brands.Features.Register.Interfaces;
+global using ERPBackend.WareHouses.Application.Brands.Features.Restore.Interfaces;
+global using ERPBackend.WareHouses.Application.Brands.Features.Update.Dtos;
+global using ERPBackend.WareHouses.Application.Brands.Features.Update.Interfaces;
+global using ERPBackend.WareHouses.Infrastructure.API.Brands;
+#endregion

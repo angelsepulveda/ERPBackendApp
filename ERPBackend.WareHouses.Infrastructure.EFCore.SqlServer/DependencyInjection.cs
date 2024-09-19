@@ -7,6 +7,7 @@ public static class DependencyInjection
     {
         services.AddCoreWareHousesEFCoreSqlServer(configuration);
         services.AddCategoriesEFCoreSqlServer();
+        services.AddBrandsEFCoreSqlServer();
         
         return services;
     }
