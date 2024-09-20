@@ -29,3 +29,15 @@ global using ERPBackend.WareHouses.Application.Brands.Features.Update.Dtos;
 global using ERPBackend.WareHouses.Application.Brands.Features.Update.Interfaces;
 global using ERPBackend.WareHouses.Infrastructure.Presenters.Brands;
 #endregion
+
+#region MeasurementUnits
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Get.Dtos;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Get.Interfaces;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Entities;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Pagination.Dtos;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Pagination.Interfaces;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Register.Interfaces;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Update.Dtos;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Update.Interfaces;
+global using ERPBackend.WareHouses.Infrastructure.Presenters.MeasurementUnits;
+#endregion

@@ -20,4 +20,5 @@ internal class WareHousesApplicationDbContext: DbContext, IWareHouseUnitOfWork
 
     public DbSet<Category> Categories { get; set; }
     public DbSet<Brand> Brands { get; set; }
+    public DbSet<MeasurementUnit> MeasurementUnits { get; set; }
 }

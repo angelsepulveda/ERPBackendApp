@@ -6,6 +6,7 @@ public static class DependencyInjection
     {
         services.AddCategoriesDomainServices();
         services.AddBrandsDomainServices();
+        services.AddMeasurementUnitsDomain();
         
         return services;
     }

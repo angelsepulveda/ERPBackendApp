@@ -1,4 +1,6 @@
-﻿namespace ERPBackend.WareHouses.Infrastructure.API;
+﻿
+
+namespace ERPBackend.WareHouses.Infrastructure.API;
 
 public static class EndpointsContainer
 {
@@ -6,6 +8,7 @@ public static class EndpointsContainer
     {
         app.UseCategoriesEndpoints();
         app.UseBrandsEndpoints();
+        app.UseMeasurementUnitsEndpoints();
         
         return app;
     }

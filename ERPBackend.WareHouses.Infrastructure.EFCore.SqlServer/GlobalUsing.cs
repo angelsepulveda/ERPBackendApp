@@ -31,3 +31,11 @@ global using ERPBackend.WareHouses.Domain.Brands.Interfaces.Repositories;
 global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.Brands.Repositories;
 global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.Brands;
 #endregion
+
+#region MeasurementUnits
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Entities;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.ValueObjects;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Interfaces.Repositories;
+global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.MeasurementUnits.Repositories;
+global using ERPBackend.WareHouses.Infrastructure.EFCore.SqlServer.MeasurementUnits;
+#endregion

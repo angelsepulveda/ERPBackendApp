@@ -63,3 +63,31 @@ global using Microsoft.Extensions.DependencyInjection;
 global using ERPBackend.WareHouses.Domain.Core.Interfaces;
 global using ERPBackend.SharedKernel.Domain.Paginations;
 #endregion
+
+#region MeasurementUnits
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Delete.Interfaces;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Interfaces.Repositories;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.ValueObjects;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Get.Dtos;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Entities;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Get.Interfaces;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Pagination.Dtos;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Pagination.Interfaces;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Register.Dtos;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Register.Interfaces;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Interfaces.Services;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Exceptions;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Update.Dtos;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Update.Interfaces;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Restore.Interfaces;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Delete.UseCases;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Get.UseCases;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Pagination.UseCases;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Register.UseCases;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Register.Validators;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Restore.UseCases;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Update.UseCases;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features.Update.Validators;
+global using ERPBackend.WareHouses.Application.MeasurementUnits.Features;
+global using ERPBackend.WareHouses.Application.MeasurementUnits;
+#endregion

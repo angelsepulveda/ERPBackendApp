@@ -1,4 +1,5 @@
-﻿#region Categories
+﻿
+#region Categories
 global using ERPBackend.WareHouses.Domain.Categories.ValueObjects;
 global using ERPBackend.WareHouses.Domain.Categories.Entities;
 global using ERPBackend.WareHouses.Domain.Categories.Exceptions;
@@ -25,4 +26,14 @@ global using ERPBackend.SharedKernel.Domain.Paginations;
 
 #region Libreries
 global using Microsoft.Extensions.DependencyInjection;
+#endregion
+
+#region MeasurementUnits
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.ValueObjects;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Entities;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Exceptions;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Interfaces.Repositories;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Interfaces.Services;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits;
+global using ERPBackend.WareHouses.Domain.MeasurementUnits.Services;
 #endregion

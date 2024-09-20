@@ -21,7 +21,7 @@ internal sealed class PaginationBrandRepository(WareHousesApplicationDbContext d
             .Take(pageSize)
             .ToListAsync();
 
-        var count = await dbContext.Categories.CountAsync();
+        var count = await dbContext.Brands.CountAsync();
         var totalPages = (int)Math.Ceiling(count / (double)pageSize);
 
         return new PaginatedList<Brand>(brands, pageIndex, totalPages);
