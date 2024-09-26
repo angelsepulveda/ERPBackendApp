@@ -12,4 +12,21 @@ global using ERPBackend.Settings.Domain.VoucherTypes.Entities;
 #region Shared
 global using ERPBackend.SharedKernel.Domain.Exceptions;
 global using ERPBackend.SharedKernel.Domain.Paginations;
+global using Microsoft.Extensions.DependencyInjection;
+#endregion
+
+#region Address
+
+#region Countries
+global using ERPBackend.Settings.Domain.Address.Countries.ValueObjects;
+global using ERPBackend.Settings.Domain.Address.Countries.Entities;
+global using ERPBackend.Settings.Domain.Address.Countries.Interfaces.Repositories;
+global using ERPBackend.Settings.Domain.Address.Countries.Interfaces.Services;
+global using ERPBackend.Settings.Domain.Address.Countries.Exceptions;
+global using ERPBackend.Settings.Domain.Address.Countries.Services;
+global using ERPBackend.Settings.Domain.Address.Countries;
+global using ERPBackend.Settings.Domain.Address;
+#endregion
+
+
 #endregion

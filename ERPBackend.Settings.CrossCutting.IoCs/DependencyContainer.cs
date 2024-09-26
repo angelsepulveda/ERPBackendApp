@@ -6,6 +6,7 @@ public static class DependencyContainer
         IConfiguration configuration)
     {
         services.AddSettingsApplication()
+            .AddSettingsDomain()
             .AddSettingsPresenters()
             .AddSettingsEFCoreSqlServer(configuration);
 

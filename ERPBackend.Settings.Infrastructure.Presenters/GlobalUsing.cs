@@ -24,3 +24,20 @@ global using ERPBackend.Settings.Infrastructure.Presenters.VoucherTypes;
 global using Microsoft.Extensions.DependencyInjection;
 global using ERPBackend.SharedKernel.Domain.Paginations;
 #endregion
+
+#region Address
+global using ERPBackend.Settings.Infrastructure.Presenters.Address;
+
+#region Countries
+global using ERPBackend.Settings.Application.Address.Countries.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Countries.Entities;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Interfaces;
+global using ERPBackend.Settings.Infrastructure.Presenters.Address.Countries;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Get.Interfaces;
+#endregion
+
+
+#endregion

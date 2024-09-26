@@ -6,6 +6,7 @@ public static class DependencyInjection
     {
         services.AddDocumentTypePresenters();
         services.AddVoucherTypePresenters();
+        services.AddAddressPresenters();
         
         return services;
     }

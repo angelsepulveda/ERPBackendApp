@@ -18,4 +18,5 @@ internal class InternalSettingsApplicationDbContext : DbContext
     
     public DbSet<DocumentType> DocumentTypes { get; set; }
     public DbSet<VoucherType> VoucherTypes { get; set; }
+    public DbSet<Country> Countries { get; set; }
 }

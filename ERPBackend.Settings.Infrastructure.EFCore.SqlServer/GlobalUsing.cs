@@ -28,3 +28,15 @@ global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Contexts;
 global using ERPBackend.SharedKernel.Domain.Interfaces.Repositories;
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core;
 #endregion
+
+#region Address
+
+#region Countries
+global using ERPBackend.Settings.Domain.Address.Countries.Entities;
+global using ERPBackend.Settings.Domain.Address.Countries.ValueObjects;
+global using ERPBackend.Settings.Domain.Address.Countries.Interfaces.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Countries.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Countries;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address;
+#endregion
+#endregion

@@ -61,3 +61,34 @@ global using ERPBackend.SharedKernel.Validations.Domain;
 global using ERPBackend.SharedKernel.Domain.Paginations;
 global using ERPBackend.SharedKernel.Domain.Exceptions;
 #endregion
+
+#region Address
+global using ERPBackend.Settings.Application.Address;
+
+#region Countries
+global using ERPBackend.Settings.Application.Address.Countries.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Countries.Exceptions;
+global using ERPBackend.Settings.Domain.Address.Countries.Interfaces.Repositories;
+global using ERPBackend.Settings.Domain.Address.Countries.ValueObjects;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Register.Dtos;
+global using ERPBackend.Settings.Domain.Address.Countries.Entities;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Countries.Interfaces.Services;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Get.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Delete.UseCases;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Get.UseCases;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.UseCases;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Register.UseCases;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Restore.UseCases;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.UseCases;
+global using ERPBackend.Settings.Application.Address.Countries.Features;
+global using ERPBackend.Settings.Application.Address.Countries;
+#endregion
+
+#endregion

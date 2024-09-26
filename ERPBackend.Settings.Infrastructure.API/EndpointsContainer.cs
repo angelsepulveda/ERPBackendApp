@@ -6,6 +6,7 @@ public static class EndpointsContainer
     {
         app.UseDocumentTypesEndpoints();
         app.UseVoucherTypesEndpoints();
+        app.UseAddressEndpoints();
 
         return app;
     }

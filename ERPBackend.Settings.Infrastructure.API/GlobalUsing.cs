@@ -27,3 +27,21 @@ global using ERPBackend.Settings.Application.VoucherTypes.Features.Update.Interf
 global using ERPBackend.Settings.Application.VoucherTypes.Features.Delete.Interfaces;
 global using ERPBackend.Settings.Infrastructure.APÍ.VoucherTypes;
 #endregion
+
+#region Address
+global using ERPBackend.Settings.Infrastructure.APÍ.Address;
+
+#region Countries
+global using ERPBackend.Settings.Application.Address.Countries.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Get.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Register.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Register.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Interfaces;
+global using ERPBackend.Settings.Infrastructure.APÍ.Address.Countries;
+#endregion
+#endregion
