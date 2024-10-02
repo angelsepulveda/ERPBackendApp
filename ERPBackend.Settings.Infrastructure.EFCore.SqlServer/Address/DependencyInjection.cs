@@ -5,7 +5,8 @@ public static class DependencyInjection
     public static IServiceCollection AddAddressesEFCoreSqlServer(this IServiceCollection services)
     {
         services.AddCountriesEFCoreSqlServer();
-
+        services.AddRegionsEFCoreSqlServer();
+        
         return services;
     }
 }

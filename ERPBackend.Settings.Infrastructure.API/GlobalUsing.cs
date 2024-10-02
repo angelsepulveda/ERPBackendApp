@@ -44,4 +44,19 @@ global using ERPBackend.Settings.Application.Address.Countries.Features.Update.D
 global using ERPBackend.Settings.Application.Address.Countries.Features.Update.Interfaces;
 global using ERPBackend.Settings.Infrastructure.APÍ.Address.Countries;
 #endregion
+
+#region Regions
+global using ERPBackend.Settings.Application.Address.Regions.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Get.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Register.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Register.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Interfaces;
+global using ERPBackend.Settings.Infrastructure.APÍ.Address.Regions;
+#endregion
+
 #endregion

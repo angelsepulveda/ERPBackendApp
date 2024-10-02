@@ -5,6 +5,7 @@ public static class EndpointsContainer
     public static WebApplication UseAddressEndpoints(this WebApplication app)
     {
         app.UseCountriesEndpoints();
+        app.UseRegionsEndpoints();
         
         return app;
     }

@@ -91,4 +91,29 @@ global using ERPBackend.Settings.Application.Address.Countries.Features;
 global using ERPBackend.Settings.Application.Address.Countries;
 #endregion
 
+#region Regions
+global using ERPBackend.Settings.Application.Address.Regions.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Regions.Exceptions;
+global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Repositories;
+global using ERPBackend.Settings.Domain.Address.Regions.ValueObjects;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Regions.Entities;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Register.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Services;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Delete.UseCases;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Get.UseCases;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.UseCases;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Register.UseCases;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Restore.UseCases;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.UseCases;
+global using ERPBackend.Settings.Application.Address.Regions.Features;
+global using ERPBackend.Settings.Application.Address.Regions;
+#endregion
+
 #endregion

@@ -28,5 +28,15 @@ global using ERPBackend.Settings.Domain.Address.Countries;
 global using ERPBackend.Settings.Domain.Address;
 #endregion
 
+#region Regions
+global using ERPBackend.Settings.Domain.Address.Regions.ValueObjects;
+global using ERPBackend.Settings.Domain.Address.Regions.Entities;
+global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Repositories;
+global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Services;
+global using ERPBackend.Settings.Domain.Address.Regions.Exceptions;
+global using ERPBackend.Settings.Domain.Address.Regions.Services;
+global using ERPBackend.Settings.Domain.Address.Regions;
+#endregion
+
 
 #endregion

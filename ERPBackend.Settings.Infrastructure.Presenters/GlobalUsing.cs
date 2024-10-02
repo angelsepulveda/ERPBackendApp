@@ -39,5 +39,17 @@ global using ERPBackend.Settings.Application.Address.Countries.Features.Paginati
 global using ERPBackend.Settings.Application.Address.Countries.Features.Get.Interfaces;
 #endregion
 
+#region Regions
+global using ERPBackend.Settings.Application.Address.Regions.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Regions.Entities;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Get.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Infrastructure.Presenters.Address.Regions;
+#endregion
+
 
 #endregion

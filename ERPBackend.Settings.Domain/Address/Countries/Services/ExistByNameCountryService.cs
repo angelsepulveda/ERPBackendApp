@@ -1,6 +1,6 @@
 ﻿namespace ERPBackend.Settings.Domain.Address.Countries.Services;
 
-internal sealed class ExisteByNameCountryService(IGetByNameCountryRepository repository) : IExistByNameCountryService
+internal sealed class ExistByNameCountryService(IGetByNameCountryRepository repository) : IExistByNameCountryService
 {
     public async Task HandleAsync(Country country)
     {

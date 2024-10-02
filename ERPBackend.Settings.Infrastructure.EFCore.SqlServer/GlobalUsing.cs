@@ -39,4 +39,13 @@ global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Countri
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Countries;
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address;
 #endregion
+
+#region Regions
+global using ERPBackend.Settings.Domain.Address.Regions.Entities;
+global using ERPBackend.Settings.Domain.Address.Regions.ValueObjects;
+global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Regions.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Regions;
+#endregion
+
 #endregion
