@@ -48,4 +48,12 @@ global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Regions
 global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Regions;
 #endregion
 
+#region Municipalities
+global using ERPBackend.Settings.Domain.Address.Municipalities.Entities;
+global using ERPBackend.Settings.Domain.Address.Municipalities.ValueObjects;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Interfaces.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Municipalities.Repositories;
+global using ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Address.Municipalities;
+#endregion
+
 #endregion

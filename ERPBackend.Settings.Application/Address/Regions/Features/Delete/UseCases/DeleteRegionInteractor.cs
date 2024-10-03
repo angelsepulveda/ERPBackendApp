@@ -9,7 +9,7 @@ internal sealed class DeleteRegionInteractor(
     {
         var region = await getByIdRepository.HandleAsync(new RegionId(id));
 
-        if (region is null) throw new RegionNotFoundException();
+        if (region is null) throw new MunicipalityNotFoundException();
 
         region.Delete();
 

@@ -31,12 +31,20 @@ global using ERPBackend.Settings.Domain.Address;
 #region Regions
 global using ERPBackend.Settings.Domain.Address.Regions.ValueObjects;
 global using ERPBackend.Settings.Domain.Address.Regions.Entities;
-global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Repositories;
 global using ERPBackend.Settings.Domain.Address.Regions.Interfaces.Services;
 global using ERPBackend.Settings.Domain.Address.Regions.Exceptions;
 global using ERPBackend.Settings.Domain.Address.Regions.Services;
 global using ERPBackend.Settings.Domain.Address.Regions;
 #endregion
 
+#region Municipalities
+global using ERPBackend.Settings.Domain.Address.Municipalities.ValueObjects;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Entities;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Exceptions;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Interfaces.Repositories;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Interfaces.Services;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Services;
+global using ERPBackend.Settings.Domain.Address.Municipalities;
+#endregion
 
 #endregion

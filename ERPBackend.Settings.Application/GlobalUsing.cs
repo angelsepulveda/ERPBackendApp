@@ -116,4 +116,30 @@ global using ERPBackend.Settings.Application.Address.Regions.Features;
 global using ERPBackend.Settings.Application.Address.Regions;
 #endregion
 
+#region Municipalities
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Exceptions;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Interfaces.Repositories;
+global using ERPBackend.Settings.Domain.Address.Municipalities.ValueObjects;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.Dtos;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Entities;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Register.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Interfaces.Services;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Delete.UseCases;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.UseCases;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.UseCases;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Register.UseCases;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Restore.UseCases;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.UseCases;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features;
+global using ERPBackend.Settings.Application.Address.Municipalities;
+#endregion
+
 #endregion

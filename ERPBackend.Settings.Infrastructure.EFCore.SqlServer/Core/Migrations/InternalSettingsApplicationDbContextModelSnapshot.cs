@@ -58,6 +58,96 @@ namespace ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Migrations
                     b.ToTable("Country", (string)null);
                 });
 
+            modelBuilder.Entity("ERPBackend.Settings.Domain.Address.Municipalities.Entities.Municipality", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<Guid>("CountryId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<Guid>("RegionId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId")
+                        .IsUnique();
+
+                    b.HasIndex("RegionId")
+                        .IsUnique();
+
+                    b.ToTable("Municipality", (string)null);
+                });
+
+            modelBuilder.Entity("ERPBackend.Settings.Domain.Address.Regions.Entities.Region", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<Guid>("CountryId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId")
+                        .IsUnique();
+
+                    b.ToTable("Region", (string)null);
+                });
+
             modelBuilder.Entity("ERPBackend.Settings.Domain.DocumentTypes.Entities.DocumentType", b =>
                 {
                     b.Property<Guid>("Id")
@@ -136,6 +226,36 @@ namespace ERPBackend.Settings.Infrastructure.EFCore.SqlServer.Core.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("VoucherType", (string)null);
+                });
+
+            modelBuilder.Entity("ERPBackend.Settings.Domain.Address.Municipalities.Entities.Municipality", b =>
+                {
+                    b.HasOne("ERPBackend.Settings.Domain.Address.Countries.Entities.Country", "Country")
+                        .WithOne()
+                        .HasForeignKey("ERPBackend.Settings.Domain.Address.Municipalities.Entities.Municipality", "CountryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ERPBackend.Settings.Domain.Address.Regions.Entities.Region", "Region")
+                        .WithOne()
+                        .HasForeignKey("ERPBackend.Settings.Domain.Address.Municipalities.Entities.Municipality", "RegionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Country");
+
+                    b.Navigation("Region");
+                });
+
+            modelBuilder.Entity("ERPBackend.Settings.Domain.Address.Regions.Entities.Region", b =>
+                {
+                    b.HasOne("ERPBackend.Settings.Domain.Address.Countries.Entities.Country", "Country")
+                        .WithOne()
+                        .HasForeignKey("ERPBackend.Settings.Domain.Address.Regions.Entities.Region", "CountryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Country");
                 });
 #pragma warning restore 612, 618
         }

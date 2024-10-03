@@ -6,6 +6,7 @@ public static class DependencyInjection
     {
         services.AddCountriesEFCoreSqlServer();
         services.AddRegionsEFCoreSqlServer();
+        services.AddMunicipalitiesEFCoreSqlServer();
         
         return services;
     }

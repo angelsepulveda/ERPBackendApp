@@ -14,8 +14,8 @@ public class RegionConfiguration : IEntityTypeConfiguration<Region>
         builder.Property(x => x.Status).IsRequired();
         builder.Property(x => x.CreatedBy).HasColumnType("varchar(255)").HasMaxLength(255);
         builder.Property(x => x.UpdatedBy).HasColumnType("varchar(255)").HasMaxLength(255);
-        
+
         //relaciones
-        builder.HasOne(u => u.Country).WithOne().HasForeignKey<Region>("CountryId");
+        builder.HasOne(u => u.Country).WithOne().HasForeignKey<Region>("CountryId").OnDelete(DeleteBehavior.Restrict);
     }
 }
