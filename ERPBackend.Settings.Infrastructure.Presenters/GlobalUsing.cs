@@ -51,5 +51,16 @@ global using ERPBackend.Settings.Application.Address.Regions.Features.Pagination
 global using ERPBackend.Settings.Infrastructure.Presenters.Address.Regions;
 #endregion
 
+#region Municipalities
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Register.Interfaces;
+global using ERPBackend.Settings.Domain.Address.Municipalities.Entities;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Infrastructure.Presenters.Address.Municipalities;
+#endregion
 
 #endregion

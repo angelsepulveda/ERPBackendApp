@@ -6,6 +6,7 @@ public static class DependencyInjection
     {
         services.AddCountriesPresenters();
         services.AddRegionsPresenter();
+        services.AddMunicipalitiesPresenters();
         
         return services;
     }

@@ -3,7 +3,7 @@
 public sealed record PaginationMunicipalityDto(
     Guid Id,
     string Name,
-    string Code,
+    string? Code,
     bool Status,
     Guid CountryId,
     string Country,

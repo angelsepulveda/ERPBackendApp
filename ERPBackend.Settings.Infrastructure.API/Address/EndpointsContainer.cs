@@ -6,6 +6,7 @@ public static class EndpointsContainer
     {
         app.UseCountriesEndpoints();
         app.UseRegionsEndpoints();
+        app.UseMunicipalitiesEndpoints();
         
         return app;
     }

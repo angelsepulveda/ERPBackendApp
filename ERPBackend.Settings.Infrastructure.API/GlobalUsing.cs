@@ -59,4 +59,18 @@ global using ERPBackend.Settings.Application.Address.Regions.Features.Update.Int
 global using ERPBackend.Settings.Infrastructure.APÍ.Address.Regions;
 #endregion
 
+#region Municipalities
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Delete.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Get.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Pagination.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Register.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Register.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Restore.Interfaces;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.Dtos;
+global using ERPBackend.Settings.Application.Address.Municipalities.Features.Update.Interfaces;
+global using ERPBackend.Settings.Infrastructure.APÍ.Address.Municipalities;
+#endregion
+
 #endregion
