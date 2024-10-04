@@ -12,7 +12,7 @@ public static class GetCountryEndpoints
                     return presenter.Response;
                     
                 }).Produces<IReadOnlyList<GetCountryResponseDto>>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Countries");
 
         return app;
     } 

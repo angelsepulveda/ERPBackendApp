@@ -13,7 +13,7 @@ public static class PaginationCategoryEndpoints
                     return presenter.ResponseDto;
                     
                 }).Produces<PaginationCategoryResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Categories");
 
         return app;
     }

@@ -11,7 +11,7 @@ public static class DeleteCountryEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Countries");
         return app;
     }
 }

@@ -11,7 +11,7 @@ public static class RestoreMunicipalityEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            }).Produces<int>(StatusCodes.Status204NoContent);
+            }).Produces<int>(StatusCodes.Status204NoContent).WithTags("Municipalities");
         return app;
     }
 }

@@ -12,7 +12,7 @@ public static class PaginationVoucherTypeEndpoints
 
                     return presenter.PaginationResponse;
                 }).Produces<PaginationVoucherTypeResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Voucher Types");
 
         return app;
     }

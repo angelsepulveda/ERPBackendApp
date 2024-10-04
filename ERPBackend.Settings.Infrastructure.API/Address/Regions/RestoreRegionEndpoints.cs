@@ -11,7 +11,7 @@ public static class RestoreRegionEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            }).Produces<int>(StatusCodes.Status204NoContent);
+            }).Produces<int>(StatusCodes.Status204NoContent).WithTags("Regions");
         return app;
     }
 }

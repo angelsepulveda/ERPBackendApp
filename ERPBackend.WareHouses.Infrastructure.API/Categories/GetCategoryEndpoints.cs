@@ -12,7 +12,7 @@ public static class GetCategoryEndpoints
                     return presenter.Response;
                     
                 }).Produces<IReadOnlyList<GetCategoryResponseDto>>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Categories");
 
         return app;
     }   

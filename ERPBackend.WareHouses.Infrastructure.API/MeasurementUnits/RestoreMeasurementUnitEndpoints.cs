@@ -11,7 +11,7 @@ public static class RestoreMeasurementUnitEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            }).Produces<int>(StatusCodes.Status204NoContent);
+            }).Produces<int>(StatusCodes.Status204NoContent).WithTags("MeasurementUnits");
         return app;
     }
 }

@@ -13,7 +13,7 @@ public static class PaginationRegionEndpoints
                     return presenter.Response;
                     
                 }).Produces<PaginationRegionResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Regions");
 
         return app;
     }

@@ -13,7 +13,7 @@ public static class PaginationBrandEndpoints
                     return presenter.Response;
                     
                 }).Produces<PaginationBrandResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Brands");
 
         return app;
     }

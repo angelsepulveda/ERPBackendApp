@@ -12,7 +12,7 @@ public static class RegisterBrandEndpoints
 
                     return presenter.BrandId;
                 }).Produces<Guid>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Brands");
 
         return app;
     }

@@ -11,7 +11,7 @@ public static class DeleteCategoryEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Categories");
         return app;
     }
 }

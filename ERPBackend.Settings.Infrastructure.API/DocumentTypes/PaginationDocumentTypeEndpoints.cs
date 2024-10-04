@@ -12,7 +12,7 @@ public static class PaginationDocumentTypeEndpoints
 
                     return presenter.PaginationResponse;
                 }).Produces<PaginationDocumentTypeResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Document Types");
 
         return app;
     }

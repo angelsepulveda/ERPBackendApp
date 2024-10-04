@@ -13,7 +13,7 @@ public static class PaginationCountryEndpoints
                     return presenter.Response;
                     
                 }).Produces<PaginationCountryResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Countries");
 
         return app;
     }

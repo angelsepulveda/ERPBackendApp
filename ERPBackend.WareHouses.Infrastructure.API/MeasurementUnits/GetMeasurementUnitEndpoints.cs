@@ -12,7 +12,7 @@ public static class GetMeasurementUnitEndpoints
                     return presenter.Response;
                     
                 }).Produces<IReadOnlyList<GetMeasurementUnitResponseDto>>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("MeasurementUnits");
         
         return app;
     } 

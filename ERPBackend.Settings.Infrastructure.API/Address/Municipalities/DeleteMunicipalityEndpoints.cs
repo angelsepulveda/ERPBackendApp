@@ -11,7 +11,7 @@ public static class DeleteMunicipalityEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Municipalities");
         return app;
     }
 }

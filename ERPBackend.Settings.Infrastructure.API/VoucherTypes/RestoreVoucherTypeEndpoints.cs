@@ -13,7 +13,7 @@ public static class RestoreVoucherTypeEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            }).Produces<int>(StatusCodes.Status204NoContent);
+            }).Produces<int>(StatusCodes.Status204NoContent).WithTags("Voucher Types");
         return app;
     }
 }

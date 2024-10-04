@@ -12,7 +12,7 @@ public static class RegisterMunicipalityEndpoints
 
                     return presenter.MunicipalityId;
                 }).Produces<int>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Municipalities");
 
         return app;
     }

@@ -11,7 +11,7 @@ public static class RestoreDocumentTypeEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            }).Produces<int>(StatusCodes.Status204NoContent);
+            }).Produces<int>(StatusCodes.Status204NoContent).WithTags("Document Types");
         return app;
     }
 }

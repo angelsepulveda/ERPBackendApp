@@ -11,7 +11,7 @@ public static class DeleteVoucherTypeEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Voucher Types");
         return app;
     }
 }

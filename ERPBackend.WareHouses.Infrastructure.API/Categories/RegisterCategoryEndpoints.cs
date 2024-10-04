@@ -12,7 +12,7 @@ public static class RegisterCategoryEndpoints
 
                     return presenter.CategoryId;
                 }).Produces<int>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Categories");
 
         return app;
     }

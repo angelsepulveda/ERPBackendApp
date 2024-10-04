@@ -12,7 +12,7 @@ public static class GetBrandEndpoints
                     return presenter.Response;
                     
                 }).Produces<IReadOnlyList<GetBrandResponseDto>>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Brands");
 
         return app;
     } 

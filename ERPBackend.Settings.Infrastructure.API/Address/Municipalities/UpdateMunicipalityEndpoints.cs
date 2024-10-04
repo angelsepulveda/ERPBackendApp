@@ -15,7 +15,7 @@ public static class UpdateMunicipalityEndpoints
                     return TypedResults.Ok(result);
                 }).Produces<UpdateMunicipalityResponseDto>(StatusCodes.Status200OK)
             .Produces<ProblemDetails>(StatusCodes.Status400BadRequest)
-            .Produces<ProblemDetails>(StatusCodes.Status404NotFound);
+            .Produces<ProblemDetails>(StatusCodes.Status404NotFound).WithTags("Municipalities");
         return app;
     }
 }

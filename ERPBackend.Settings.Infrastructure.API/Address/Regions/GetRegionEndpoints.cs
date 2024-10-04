@@ -12,7 +12,7 @@ public static class GetRegionEndpoints
                     return presenter.Response;
                     
                 }).Produces<IReadOnlyList<GetRegionResponseDto>>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Regions");
 
         return app;
     } 

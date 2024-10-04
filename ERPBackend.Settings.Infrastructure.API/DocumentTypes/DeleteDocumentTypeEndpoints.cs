@@ -11,7 +11,7 @@ public static class DeleteDocumentTypeEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Document Types");;
         return app;
     }
 }

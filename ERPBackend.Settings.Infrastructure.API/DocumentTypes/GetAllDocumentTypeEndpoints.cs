@@ -11,7 +11,7 @@ public static class GetAllDocumentTypeEndpoints
                 var result = presenter.Response;
 
                 return TypedResults.Ok(result);
-            });
+            }).WithTags("Document Types");;
         return app;
     }
 }

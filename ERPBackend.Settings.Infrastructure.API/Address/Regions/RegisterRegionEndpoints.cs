@@ -12,7 +12,7 @@ public static class RegisterRegionEndpoints
 
                     return presenter.RegionId;
                 }).Produces<int>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Regions");
         
         return app;
     }

@@ -12,7 +12,7 @@ public static class GetMunicipalityEndpoints
                     return presenter.Response;
                     
                 }).Produces<IReadOnlyList<GetMunicipalityResponseDto>>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Municipalities");
 
         return app;
     } 

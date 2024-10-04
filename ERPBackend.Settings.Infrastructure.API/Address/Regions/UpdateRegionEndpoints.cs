@@ -15,7 +15,7 @@ public static class UpdateRegionEndpoints
                     return TypedResults.Ok(result);
                 }).Produces<UpdateRegionResponseDto>(StatusCodes.Status200OK)
             .Produces<ProblemDetails>(StatusCodes.Status400BadRequest)
-            .Produces<ProblemDetails>(StatusCodes.Status404NotFound);
+            .Produces<ProblemDetails>(StatusCodes.Status404NotFound).WithTags("Regions");
         return app;
     }
 }

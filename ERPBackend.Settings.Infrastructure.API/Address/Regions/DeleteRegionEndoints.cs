@@ -11,7 +11,7 @@ public static class DeleteRegionEndoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Regions");
         return app;
     }
 }

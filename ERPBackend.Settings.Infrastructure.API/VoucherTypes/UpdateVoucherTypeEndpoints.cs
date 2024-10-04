@@ -15,7 +15,7 @@ public static class UpdateVoucherTypeEndpoints
                     return TypedResults.Ok(result);
                 }).Produces<UpdateVoucherTypeResponseDto>(StatusCodes.Status200OK)
             .Produces<ProblemDetails>(StatusCodes.Status400BadRequest)
-            .Produces<ProblemDetails>(StatusCodes.Status404NotFound);
+            .Produces<ProblemDetails>(StatusCodes.Status404NotFound).WithTags("Voucher Types");;
         return app;
     }
 }

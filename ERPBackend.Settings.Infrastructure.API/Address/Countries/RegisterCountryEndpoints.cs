@@ -12,7 +12,7 @@ public static class RegisterCountryEndpoints
 
                     return presenter.CountryId;
                 }).Produces<int>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Countries");
         
         return app;
     }

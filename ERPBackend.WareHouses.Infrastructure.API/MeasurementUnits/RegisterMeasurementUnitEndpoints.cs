@@ -13,7 +13,7 @@ public static class RegisterMeasurementUnitEndpoints
                     return presenter.MeasurementUnitId;
                     
                 }).Produces<Guid>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("MeasurementUnits");
 
         return app;
     }

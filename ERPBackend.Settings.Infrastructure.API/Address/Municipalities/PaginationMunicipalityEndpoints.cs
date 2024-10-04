@@ -13,7 +13,7 @@ public static class PaginationMunicipalityEndpoints
                     return presenter.Response;
                     
                 }).Produces<PaginationMunicipalityResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Municipalities");
 
         return app;
     }

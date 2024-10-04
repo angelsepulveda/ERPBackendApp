@@ -12,8 +12,8 @@ public static class RegisterVoucherTypeEndpoints
 
                     return presenter.VoucherTypeId;
                 }).Produces<int>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
-        
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Voucher Types");
+
         return app;
     }
 }

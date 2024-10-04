@@ -11,7 +11,7 @@ public static class DeleteBrandEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("Brands");;
         return app;
     }
 }

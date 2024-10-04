@@ -13,7 +13,7 @@ public static class PaginationMeasurementUnitEndpoints
                     return presenter.Response;
                     
                 }).Produces<PaginationMeasurementUnitResponseDto>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("MeasurementUnits");
 
         return app;
     }

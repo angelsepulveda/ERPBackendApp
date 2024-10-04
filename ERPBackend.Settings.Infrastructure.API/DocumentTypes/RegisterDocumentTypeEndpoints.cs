@@ -12,8 +12,8 @@ public static class RegisterDocumentTypeEndpoints
 
                     return presenter.DocumentTypeId;
                 }).Produces<int>()
-            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest);
-        
+            .Produces<ProblemDetails>(StatusCodes.Status400BadRequest).WithTags("Document Types");
+
         return app;
     }
 }

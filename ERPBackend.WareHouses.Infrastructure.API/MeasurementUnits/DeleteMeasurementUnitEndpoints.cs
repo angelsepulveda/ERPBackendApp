@@ -11,7 +11,7 @@ public static class DeleteMeasurementUnitEndpoints
                 await inputPort.HandleAsync(id);
 
                 return TypedResults.NoContent();
-            });
+            }).WithTags("MeasurementUnits");
         return app;
     }
 }
